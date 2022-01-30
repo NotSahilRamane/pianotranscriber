@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <a href="{{url_for('download', filename=pdf_file_path)}}" class="text-light btn btn-primary btn-lg mt-3">Downlaod .pdf file</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <a href="{{url_for('download', filename=mid_file_path)}}" class="text-light btn btn-primary btn-lg mt-3">Downlaod .mid file</a>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
